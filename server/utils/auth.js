@@ -1,10 +1,12 @@
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
+//const jwt = require('jsonwebtoken');
 
 // set token secret and expiration date
-const secret = 'mysecretsshhhhh';
-const expiration = '2h';
+const secret = 'mysecretsshhhhh';   // TODO: Put this in .env
+const expiration = '2h';            // TODO: And this too! No spoilers!
 
-module.exports = {
+//module.exports = 
+export default {
   // function for our authenticated routes
   authMiddleware: function (req, res, next) {
     // allows token to be sent via  req.query or headers

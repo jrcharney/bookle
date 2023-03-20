@@ -1,7 +1,19 @@
+import { express } from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import process from 'process';
+import db from './config/connection';
+import routes from './routes'; 
+
+/*
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
 const routes = require('./routes');
+*/
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
