@@ -1,3 +1,5 @@
-const User = require('./User');
+import User from './User';
+//const User = require('./User');
 
-module.exports = { User };
+//module.exports = { User };
+export { User };
